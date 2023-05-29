@@ -53,10 +53,6 @@ Route::middleware( [AuthMiddleware::class] )->group( function () {
 } );
 
 Route::get( '/contact', ContactController::class );
-
-Route::get( '/about', App\Http\Controllers\AboutController::class );
-
-
 Route::resource('post', PostController::class);
 Route::resource('product', ProductController::class);
 
